@@ -1,0 +1,96 @@
+/*------ Custom container -----*/
+
+.custom-container{
+    max-width:97% !important;
+    margin:0 auto;
+}
+
+/*------ Header -------*/
+
+.header{
+    background: linear-gradient(to bottom , rgba(0,0,0,0.9), rgba(255, 255, 255, 0.1)), url('../assets/img/hero.jpeg');
+    height: 92.5vh;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+/*------ Primary Nav ----------*/
+.primary-nav{
+    font-size: 1.5rem;
+}
+
+/*------ Hero text ----------*/
+.hero-text{
+    position: absolute;
+    top:45%;
+    left:50%;
+    color:#ffff;
+    transform:translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+    -moz-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    -o-transform:translate(-50%, -50%);
+    text-shadow:0.02em 0.02em #000;
+    font-size: 9vw !important;
+    font-weight: bolder;
+}
+
+/*-------- News Cards ---------*/
+.news .card{
+    box-shadow: 2px 2px 8px #d8d8d8;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.news .card-image{
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+.news .card-img-overlay{
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(255,255,255,0.1));
+}
+
+.news .card-title{
+    position: absolute;
+    top:70%;
+}
+
+.news .card-text{
+    position: absolute;
+    top:80%;
+}
+
+.news .row [class*="col-"]{
+    display: flex;
+    align-self:stretch;
+}
+
+.news .row .card:hover .card-image {
+    transform:  scale(1.0);
+    -webkit-transform:  scale(1.0);
+    -moz-transform:  scale(1.0);
+    -ms-transform:  scale(1.0);
+    -o-transform:  scale(1.0);
+}
+
+
+/*----------- Events Section -----------*/
+.card{
+    height:250px;
+    width:200px;
+}
+.events .card-img{
+    background: url('../assets/img/card-professor.jpeg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    height:100%;
+    width:100%;
+}

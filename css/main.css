@@ -1,8 +1,50 @@
+/*--------- Reset Styling ------*/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#FFFFFF;
+}
+
+/*------ Reusable styles -------*/
+.custom-nav{
+    list-style:none;
+    overflow: hidden;
+    margin: 1% auto;
+    text-align: center;
+}
+
+.custom-nav .custom-nav-item{
+    display: inline-block;
+    font-size: 1.5vw;
+    position: relative;
+    padding: 0 1% 0 1%;
+}
+
+.custom-nav .custom-nav-item::after{
+    content:'';
+    height:5rem;
+    position: absolute;
+    top:0;
+    left: 100%;
+    border:1px solid #000;
+}
+
+.custom-nav .custom-nav-item:last-child::after{
+    display: none;
+}
+
+
+
 /*------ Custom container -----*/
 
 .custom-container{
     max-width:97% !important;
     margin:0 auto;
+    overflow: hidden;
 }
 
 /*------ Header -------*/
@@ -96,5 +138,126 @@
     -moz-transform: translateY(-90%);
     -ms-transform: translateY(-90%);
     -o-transform: translateY(-90%);
+}
+
+.events .card .card-text{
+    font-size: 110%;
+    font-weight:bold;
+}
+
+
+/*--------------- Academics Section ------------*/
+.academics h4{
+    width:90%;
+    margin:0 auto;
+}
+
+.academics .card .h5{
+    font-weight: bold;
+}
+
+.academics .card{
+    border:none;
+}
+
+/*---------- Seven Schools Section ---------*/
+
+
+/*---------- Testimonial Section ---------*/
+.testimonial img{
+    height:200px;
+    width:200px;
+}
+
+/*--------- Research Section --------*/
+.research p{
+    font-size: 2vw;
+}
+
+.research .research-box{
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    width:97%;
+    margin:0 auto;
+}
+
+.research .card{
+    box-shadow: 10px 8px 16px #777;
+}
+
+
+
+/*------------ Health Care Section ---------*/
+.health-care{
+    background-color:#F9F6EF;
+}
+
+.health-care-sub{
+    width:80%;
+    margin:0 auto;
+    line-height: 180%;
+}
+
+.health-care .card{
+    border: none;
+    background-color: #F9F6EF;
+}
+
+
+/*---------- Admission Section -----------*/
+.admission{
+    background-color: #F9F6EF;
+}
+
+.admission .admission-sub{
+    width: 80%;
+    margin: 0 auto;
+    line-height:170%;
+}
+
+.admission .admission-image{
+    background: url('../assets/img/card-professor.jpeg');
+    height:80vh;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.admission .card{
+    border:none;
+    background-color: #F9F6EF;
+}
+
+
+/*------------ About Sub Section ------------------*/
+.about-sub-sec{
+    background-color:#F4F4F4;
+}
+
+.about-sub-sec i{
+    font-size: 220%;
+    margin-right: 2%;
+}
+
+
+
+
+
+
+/*------------ Responsive Design -----------*/
+@media only screen and (max-width:768px){
+    .custom-nav .custom-nav-item {
+        display: block;
+        font-size: 4vw;
+    }
+}
+
+
+
+@media only screen and (max-width:520px){
+    .custom-nav .custom-nav-item {
+        display: block;
+        font-size: 5vw;
+    }
 }
 

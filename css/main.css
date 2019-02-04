@@ -102,10 +102,15 @@ body{
 /*------ Primary Nav ----------*/
 .primary-nav{
     font-size: 1.5rem;
+    top:8% !important;
 }
 
 .primary-nav .navbar-brand{
     display: none;
+}
+
+.primary-nav .navbar-toggler{
+    border:none;
 }
 
 /*------ Hero text ----------*/
@@ -397,7 +402,7 @@ left:0;
         z-index:1000;
         position: fixed !important;
         left:0;
-        top:0;
+        top:0 !important;
         width:100%;
     }
 
@@ -443,6 +448,10 @@ left:0;
     .testimonial h3{
         font-size: 100%;
         margin-top:0;
+    }
+
+    .testimonial-bg-image{
+        height:50vh
     }
 
     .testimonial img{
@@ -664,4 +673,44 @@ left:0;
     .footer-nav .apply-btn{
         display: block;
     }
+}
+
+/*--------- Small screen size devices -------*/
+
+@media only screen and (max-width:320px){
+    
+
+    /*------ Reusable components ------*/
+    .custom-btn{
+        padding: 2% 5% 2% 5%;
+        font-size: 120%;
+        background:#0062CC;
+        border: 1px solid #0062CC;
+        color:#fff;
+        cursor: pointer;
+    }
+
+    /*-------- Primary Navigation -------*/
+    .primary-nav h3{
+        font-size:6vw !important;
+    }
+
+    /*------- News Section -------*/
+    .news-sub{
+        font-size: 6vw;
+    }
+
+    /*-------- Research section --------*/
+    .research-box h2{
+        font-size: 160%;
+    }
+
+    /*------- Health care -------*/
+    .health-care-sub{
+        font-size:100%;
+        line-height: 150%;
+
+    }
+
+
 }

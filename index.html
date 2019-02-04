@@ -20,6 +20,7 @@
 
             <!-- Utilities Navigation -->
             <div class="utility-nav text-white p-2 fixed-top">
+                <div class="custom-container">
                 <div class="row">
                     <div class="col-md-3 brand">
                         <h3>StandUp University</h3>
@@ -48,6 +49,7 @@
                             </li>
                         </ul>
                     </div>
+                    </div>
                 </div>
             </div>
            
@@ -61,28 +63,28 @@
                 <div class="collapse navbar-collapse" id="nbp">
                     <ul class="navbar-nav mx-auto font-weight-bold">
                         <li class="nav-item">
-                            <a href="#news" class="nav-link text-light">News</a>
+                            <a href="#news" class="nav-link">News</a>
                         </li>
                         <li class="nav-item">
-                                <a href="#events" class="nav-link text-light">events</a>
+                                <a href="#events" class="nav-link">events</a>
                         </li>
                         <li class="nav-item">
-                                <a href="#academics" class="nav-link text-light">Academics</a>
+                                <a href="#academics" class="nav-link">Academics</a>
                         </li>
                         <li class="nav-item">
-                                <a href="#research" class="nav-link text-light">Research</a>
+                                <a href="#research" class="nav-link">Research</a>
                         </li>
                         <li class="nav-item">
-                                <a href="#healthcare" class="nav-link text-light">Health Care</a>
+                                <a href="#healthcare" class="nav-link">Health Care</a>
                         </li>
                         <li class="nav-item">
-                                <a href="#campuslife" class="nav-link text-light">Campus Life</a>
+                                <a href="#campuslife" class="nav-link">Campus Life</a>
                         </li>
                         <li class="nav-item">
-                                <a href="#admission" class="nav-link text-light">Admission</a>
+                                <a href="#admission" class="nav-link">Admission</a>
                         </li>
                         <li class="nav-item">
-                                <a href="#about" class="nav-link text-light">About</a>
+                                <a href="#about" class="nav-link">About</a>
                         </li>
                     </ul>
                 </div>
@@ -96,7 +98,7 @@
     <!-- Explore Section -->
     <section class="explore">
         <div class=" py-2 text-center text-light">
-            <h5>Explore StandUp <i class="fa fa-angle-down font-weight-bold"></i></h5>
+            <h5><a href="#" id="explore-btn" class="text-light">Explore StandUp <i class="fa fa-angle-down font-weight-bold"></i></a></h5>
         </div>
     </section>
 
@@ -851,7 +853,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script src="../js/main.js"></script>
 <script>
-
 $(document).click(function(){
     $('.navbar-collapse').collapse('hide');
 });

@@ -99,10 +99,25 @@ body{
     position: relative;
 }
 
+/*-------- Utility Nav -------*/
+.utility-nav{
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+
 /*------ Primary Nav ----------*/
 .primary-nav{
     font-size: 1.5rem;
     top:8% !important;
+    transition:0.4s all;
+    -webkit-transition:0.4s all;
+    -moz-transition:0.4s all;
+    -ms-transition:0.4s all;
+    -o-transition:0.4s all;
 }
 
 .primary-nav .navbar-brand{
@@ -111,6 +126,10 @@ body{
 
 .primary-nav .navbar-toggler{
     border:none;
+}
+
+.primary-nav .nav-link{
+    color:#fff !important;
 }
 
 /*------ Hero text ----------*/
@@ -378,6 +397,17 @@ left:0;
 
 
 /*------------ Responsive Design -----------*/
+@media only screen and (max-width:1126px){
+
+    .utility-nav{
+        display: none;
+    }
+    .primary-nav{
+        top:0 !important;
+    }
+}
+
+
 @media only screen and (max-width:768px){
 
 
@@ -389,7 +419,7 @@ left:0;
     }
     
     /*----- Utility Nav ------*/
-    .utility-nav{
+    .utility-nav{   
         display: none;
     }
 
@@ -398,7 +428,7 @@ left:0;
     .primary-nav{
         font-size: 1rem;
         text-align: center;
-        background: #0062cc;
+        background: #0062cc !important;
         z-index:1000;
         position: fixed !important;
         left:0;

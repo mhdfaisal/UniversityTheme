@@ -1,3 +1,6 @@
+/*-------- Base Color - #0062CC  -------------*/
+/*-------- Secondary Color - #001933  --------------*/
+
 /*--------- Reset Styling ------*/
 *{
     box-sizing: border-box;
@@ -10,6 +13,44 @@ body{
 }
 
 /*------ Reusable styles -------*/
+
+.author{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.custom-btn{
+    padding: 1% 5% 1% 5%;
+    font-size: 150%;
+    background:#0062CC;
+    border: 1px solid #0062CC;
+    color:#fff;
+    cursor: pointer;
+}
+
+.custom-btn-outline{
+    padding: 1% 5% 1% 5%;
+    font-size: 120%;
+    background:#fff;
+    border: 1px solid #777;
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.custom-btn-outline:hover{
+    border: 1px solid #0062CC;
+}
+
+.card-img-top{
+    width:100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
 .custom-nav{
     list-style:none;
     overflow: hidden;
@@ -54,8 +95,8 @@ body{
     height: 92.5vh;
     background-size:cover;
     background-position: center;
-    position: relative;
     background-attachment: fixed;
+    position: relative;
 }
 
 /*------ Primary Nav ----------*/
@@ -63,11 +104,16 @@ body{
     font-size: 1.5rem;
 }
 
+.primary-nav .navbar-brand{
+    display: none;
+}
+
 /*------ Hero text ----------*/
 .hero-text{
     position: absolute;
     top:45%;
     left:50%;
+    z-index: 1;
     color:#ffff;
     transform:translate(-50%, -50%);
     -webkit-transform:translate(-50%, -50%);
@@ -79,7 +125,17 @@ body{
     font-weight: bolder;
 }
 
+/*------ Explore Section -------*/
+.explore{
+    background:#0062CC;
+}
 /*-------- News Cards ---------*/
+
+.news h1{
+    font-size: 3.5vw;
+}
+
+
 .news .card{
     box-shadow: 2px 2px 8px #d8d8d8;
     transition: all 0.4s;
@@ -88,6 +144,7 @@ body{
     -ms-transition: all 0.4s;
     -o-transition: all 0.4s;
 }
+
 
 .news .card-image{
     transition: all 0.4s;
@@ -115,16 +172,15 @@ body{
     align-self:stretch;
 }
 
-.news .row .card:hover .card-image {
-    transform:  scale(1.0);
-    -webkit-transform:  scale(1.0);
-    -moz-transform:  scale(1.0);
-    -ms-transform:  scale(1.0);
-    -o-transform:  scale(1.0);
+/*----------- Events Section -----------*/
+.events{
+    /* background-color: #2F2424; */
+    background-color: #001933;
 }
 
-
-/*----------- Events Section -----------*/
+.events .card{
+    border:1px solid #001933;
+}
 
 .events .date-card{
     background: #2F2424;
@@ -145,11 +201,17 @@ body{
     font-weight:bold;
 }
 
+.events .card-title{
+    margin-top:-8%;
+}
+
 
 /*--------------- Academics Section ------------*/
-.academics h4{
-    width:90%;
+
+.academics .academics-sub{
+    width:80%;
     margin:0 auto;
+    line-height: 150%;
 }
 
 .academics .card .h5{
@@ -164,9 +226,35 @@ body{
 
 
 /*---------- Testimonial Section ---------*/
+.testimonial{
+    position: relative;
+    color:#333;
+}
+
+.testimonial-bg-image{
+    background: linear-gradient(to right,rgba(247, 185, 15, 0.3), rgba(255,255,255,0)),url('../assets/img/testimonial.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 90vh;
+}
+
+.testimonial-content{
+position: absolute;
+top:0;
+left:0;
+}
+
 .testimonial img{
     height:200px;
     width:200px;
+}
+
+.testimonial a{
+    font-size:110%;
+    color:#333;
 }
 
 /*--------- Research Section --------*/
@@ -182,7 +270,7 @@ body{
 }
 
 .research .card{
-    box-shadow: 10px 8px 16px #777;
+    box-shadow: 0px 2px 4px #d1d1d1;
 }
 
 
@@ -216,11 +304,11 @@ body{
 }
 
 .admission .admission-image{
-    background: url('../assets/img/card-professor.jpeg');
-    height:80vh;
+    background: url('../assets/img/admission.jpeg');
+    height:70vh;
     width:100%;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
 }
 
 .admission .card{
@@ -228,8 +316,23 @@ body{
     background-color: #F9F6EF;
 }
 
+/*--------- Campus Section --------*/
+.campus-life .card{
+    border:none;
+}
+
+
 
 /*------------ About Sub Section ------------------*/
+.about-sub-image{
+    background: url('../assets/img/about-img.jpeg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    max-width: 100%;
+}
+
 .about-sub-sec{
     background-color:#F4F4F4;
 }
@@ -239,25 +342,326 @@ body{
     margin-right: 2%;
 }
 
+/*----------- Footer Nav Section -------*/
+.footer-nav{
+    background-color: #fff;
+}
 
+.footer-nav h5{
+    color:#0062CC;
+}
+
+.footer-nav .nav-link{
+    color:#000;
+}
+
+.footer-nav .apply-btn .nav-link:hover{
+    color:#0062CC;
+}
+
+/*--------- Footer Section ----------*/
+.footer{
+    background: #001933;
+    color:#fff;
+}
+
+.footer .nav-link{
+    color:#fff;
+}
 
 
 
 
 /*------------ Responsive Design -----------*/
 @media only screen and (max-width:768px){
-    .custom-nav .custom-nav-item {
+
+
+    /*------ Reusable styles -------*/
+    .card-img-top{
+        width:100%;
+        height: 30vw;
+        object-fit: cover;
+    }
+    
+    /*----- Utility Nav ------*/
+    .utility-nav{
+        display: none;
+    }
+
+    /*----- Primary Nav --------*/
+
+    .primary-nav{
+        font-size: 1rem;
+        text-align: center;
+        background: #0062cc;
+        z-index:1000;
+        position: fixed !important;
+        left:0;
+        top:0;
+        width:100%;
+    }
+
+    .primary-nav .navbar-brand{
         display: block;
-        font-size: 4vw;
+    }
+
+    /*------- News section -------*/
+    .news h1{
+            font-size:5vw;
+    }
+
+    /*------ Events Section ------*/
+    .events h1{
+        font-size:5vw;
+    }
+    .events h4{
+        font-size:100%;
+    }
+
+    .events .card .card-text{
+        font-size:90%;
+    }
+
+    /*------- Academics Section ------*/
+    .academics h1{
+        font-size:5vw;
+    }
+    .academics h4{
+        font-size:100%;
+    }
+
+    /*----- Seven Schools Section ------*/
+    .custom-nav-link{
+        font-size:2vw;
+    }
+
+    /*------- Testimonial Section ---*/
+    .testimonial h2{
+        font-size: 150%;
+    }
+
+    .testimonial h3{
+        font-size: 100%;
+        margin-top:0;
+    }
+
+    .testimonial img{
+        height:100px;
+        width:100px;
+    }
+
+    .blockquote{
+        font-size: 100%;
+    }
+
+    /*---------- Health Care Section ----------*/
+    .health-care h1{
+        font-size: 210%;
+    }
+
+    /*----- Campus Life ---*/
+    .campus-life h1{
+        font-size:250%;
+    }
+
+    .campus-life .health-care-sub{
+        width:100%;
+        line-height: 150%;
+    }
+
+    /*------- Admission Section ----*/
+    .admission h1{
+        font-size:250%;
     }
 }
 
 
+/*---- Large Mobile Phones -------*/
 
-@media only screen and (max-width:520px){
-    .custom-nav .custom-nav-item {
+@media only screen and (max-width:425px){
+
+    /*------ Reusable styles -------*/
+    .card-img-top{
+        width:100%;
+        height: 45vw;
+        object-fit: cover;
+    }
+    
+
+    /*------- News section -------*/
+    .news h1{
+            font-size:7vw;
+    }
+
+
+    .news-cards-2 .card:nth-child(1) .card-img-top{
+        display: none;
+    }
+
+    .news-cards-2 .card:nth-child(1) h5, .news-cards h5{
+        color:#0062CC;
+    }
+
+    /*------ Events Section ------*/
+    .events h1{
+        font-size:7vw;
+    }
+    .events h3{
+        font-size:125%;
+    }
+
+    .events .card .card-text{
+        font-size:120%;
+    }
+    .events .card .card-img-top{
+        display: none;
+    }
+
+    .events .date-card{
+        transform: translate(0%,0%)    ;
+        -webkit-transform: translate(0%,0%)    ;
+        -moz-transform: translate(0%,0%)    ;
+        -ms-transform: translate(0%,0%)    ;
+        -o-transform: translate(0%,0%)    ;
+}
+
+    /*------- Academics Section ------*/
+    .academics h1{
+        font-size:8vw;
+    }
+    .academics .academics-sub{
+        width:100%;
+        font-size:120%;
+        font-weight: light;
+    }
+
+    /*----- Seven Schools Section ------*/
+    .custom-nav-link{
+        font-size:2vw;
+    }
+
+    /*------- Testimonial Section ---*/
+    .testimonial h2{
+        font-size: 150%;
+    }
+
+    .testimonial h3{
+        font-size: 100%;
+        margin-top:0;
+    }
+
+    .testimonial img{
+        height:100px;
+        width:100px;
+    }
+
+    .blockquote{
+        font-size: 100%;
+    }
+
+    /*---------- Health Care Section ----------*/
+    .health-care h1{
+        font-size: 210%;
+    }
+
+    /*----- Campus Life ---*/
+    .campus-life h1{
+        font-size:250%;
+    }
+
+    .campus-life .health-care-sub{
+        width:100%;
+        line-height: 150%;
+    }
+
+    /*------- Admission Section ----*/
+    .admission h1{
+        font-size:250%;
+    }
+
+    /*------- Seven School Sections -------*/
+    .custom-nav{
+        list-style:none;
+        overflow: hidden;
+        margin: 1% auto;
+        text-align: center;
+    }
+    
+    .custom-nav .custom-nav-item{
         display: block;
         font-size: 5vw;
+        position: relative;
+        padding: 0 1% 0 1%;
+    }
+
+    .custom-nav .custom-nav-item .custom-nav-link{
+        font-size: 5vw;
+    }
+
+    
+    .custom-nav .custom-nav-item::after{
+        content:'';
+        display: none;
+    }
+
+    .schools h3{
+        font-size:150%;
+        margin-bottom:5%;
+    }
+
+    /*------ Research ------*/
+    .research h1{
+        font-size:210%;
+    }
+
+    .research p{
+        font-size: 4vw;
+    }
+
+    .research .card .card-img-top{
+        display: none;
+    }
+
+    .research .card .card-title{
+        color:#0062CC;
+    }
+
+    /*-------- Health Care Section ------*/
+    .health-care-sub{
+        width:100%;
+        font-size: 130%;
+        line-height: 120%;
+    }
+
+    /*-------- Campus Life -------*/
+    .campus-life h1{
+        font-size: 200%;
+    }
+    
+
+    /*------- Admission ------*/
+    .admission .admission-sub{
+        width: 100%;
+        margin: 0 auto;
+        line-height:140%;
+        font-size:100%;
+
+    }
+
+    /*------ About Section ------*/
+    .about h1{
+        font-size: 180%;
+    }
+
+    .about-sub{
+        font-size: 120%;
+    }
+    /*-------- footer-nav ----------*/
+    .footer-nav [class*="col-"]{
+        display: none;
+    }
+
+    .footer-nav .apply-btn{
+        display: block;
     }
 }
-

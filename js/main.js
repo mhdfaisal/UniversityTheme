@@ -18,7 +18,7 @@ $(document).ready(function(){
         if(window.scrollY >= scrollPoint.top+50){
 
         $('.utility-nav').css({"background":"#001933"});
-        $('.primary-nav').css({"background":"rgba(0,98,204,0.9)"});
+        $('.primary-nav').css({"background":"rgb(0,98,204)"});
         }
         else if(window.scrollY <= scrollPoint.top+50){
 

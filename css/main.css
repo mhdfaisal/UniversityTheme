@@ -399,11 +399,22 @@ left:0;
 /*------------ Responsive Design -----------*/
 @media only screen and (max-width:1126px){
 
+    /*----- Utility nav ----*/
     .utility-nav{
         display: none;
     }
+
+    /*----- Primary Nav -----*/
     .primary-nav{
         top:0 !important;
+    }
+
+    /*----- Hero text ----*/
+    .hero-text{
+
+        color:#fff;
+        font-size: 9vw !important;
+        font-weight: bolder;
     }
 }
 
@@ -723,11 +734,15 @@ left:0;
 
 
 /*------- Medium screen size mobile devices --------*/
+@media only screen and (max-width:375px){
+
 .hero-text{
 
     color:#fff;
     font-size: 14vw !important;
     font-weight: bolder;
+}
+
 }
 
 /*--------- Small screen size Mobile devices -------*/
